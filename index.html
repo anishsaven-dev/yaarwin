@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Download YaarWin APK - Connect, play and win with friends. Experience fast performance, secure chats, and exciting features. Get the official YaarWin app now.">
+    <meta name="keywords" content="YaarWin, download APK, social app, gaming app, install YaarWin">
+    <meta name="author" content="YaarWin">
+    <meta property="og:title" content="YaarWin - Connect & Play">
+    <meta property="og:description" content="Download YaarWin APK and join the ultimate social gaming experience.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>YaarWin – Connect, Play, Win</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1e2a32;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        /* green touch variables */
+        :root {
+            --green-primary: #0f8b3e;
+            --green-light: #e8f5e9;
+            --green-dark: #0a6230;
+            --green-soft: #d9f0e3;
+            --gray-100: #f8fafc;
+            --gray-200: #eef2f6;
+            --gray-700: #334155;
+            --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.05);
+            --shadow-hover: 0 20px 30px -12px rgba(15, 139, 62, 0.15);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+            border-bottom: 1px solid var(--gray-200);
+            padding: 0.8rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .app-icon-placeholder {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--green-primary);
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .app-icon-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .logo-text {
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--green-primary) 0%, #136b3e 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #1f2a3e;
+            transition: 0.2s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--green-primary);
+        }
+
+        .btn-outline-nav {
+            background: transparent;
+            border: 1.5px solid var(--green-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+            color: var(--green-primary);
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .btn-outline-nav:hover {
+            background: var(--green-primary);
+            color: white;
+        }
+
+        /* Buttons */
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--green-primary);
+            color: white;
+            font-weight: 600;
+            padding: 0.9rem 2rem;
+            border-radius: 60px;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(15, 139, 62, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--green-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -12px var(--green-primary);
+        }
+
+        .btn-secondary {
+            background: white;
+            border: 1.5px solid var(--green-primary);
+            color: var(--green-primary);
+            padding: 0.8rem 1.8rem;
+            border-radius: 60px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--green-light);
+            transform: translateY(-2px);
+        }
+
+        /* Section spacing */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-align: center;
+            letter-spacing: -0.01em;
+            color: #0c1e28;
+        }
+
+        .section-title span {
+            color: var(--green-primary);
+            border-bottom: 3px solid var(--green-primary);
+            display: inline-block;
+            padding-bottom: 0.2rem;
+        }
+
+        /* Hero - without image placeholder, full width text */
+        .hero {
+            padding: 4rem 0 3rem 0;
+            background: linear-gradient(145deg, #ffffff 0%, #fbfef9 100%);
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            background: var(--green-light);
+            color: var(--green-dark);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-tagline {
+            font-size: 1.2rem;
+            color: var(--gray-700);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Feature cards */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 28px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: 0.2s;
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--green-soft);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .feature-icon {
+            font-size: 2.8rem;
+            color: var(--green-primary);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Screenshots */
+        .screenshots-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .screenshot-item {
+            background: #fafdf7;
+            border-radius: 32px;
+            padding: 0.8rem;
+            box-shadow: var(--shadow-sm);
+            transition: 0.2s;
+            width: 220px;
+            text-align: center;
+        }
+
+        .screenshot-item img {
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 10px 15px -5px rgba(0,0,0,0.05);
+            background: #eef2f0;
+        }
+
+        .screenshot-item p {
+            margin-top: 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #2c5a3b;
+        }
+
+        /* About section */
+        .about-wrap {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+            align-items: center;
+            background: var(--green-light);
+            border-radius: 40px;
+            padding: 2.5rem;
+        }
+
+        .about-text {
+            flex: 1.5;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #2d3e46;
+        }
+
+        .about-icon {
+            flex: 0.8;
+            text-align: center;
+        }
+
+        /* Install Steps */
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .step {
+            background: white;
+            border-radius: 30px;
+            padding: 1.8rem 1rem;
+            flex: 1;
+            min-width: 180px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .step-number {
+            background: var(--green-primary);
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 60px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem;
+            margin: 0 auto 1rem auto;
+        }
+
+        .step h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        /* FAQ */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 24px;
+            margin-bottom: 1rem;
+            padding: 1.2rem 1.8rem;
+            border: 1px solid var(--gray-200);
+            transition: 0.2s;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            color: #1f2a3e;
+        }
+
+        .faq-question i {
+            color: var(--green-primary);
+            transition: 0.2s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            color: #4a5b6b;
+            margin-top: 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+            margin-top: 1rem;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* CTA section */
+        .cta-section {
+            background: var(--green-light);
+            border-radius: 48px;
+            text-align: center;
+            padding: 3.5rem 2rem;
+            margin: 2rem 0;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            margin-bottom: 2rem;
+            color: #2b4e35;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--gray-200);
+            padding: 2.5rem 0 2rem;
+            background: white;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .footer-nav {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: var(--gray-700);
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .footer-nav a:hover {
+            color: var(--green-primary);
+        }
+
+        .copyright {
+            color: #5a6f7c;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.2rem;
+            }
+            .hero-content h1 {
+                font-size: 2.3rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .nav-links {
+                gap: 1rem;
+            }
+            .about-wrap {
+                padding: 1.8rem;
+            }
+            .hero {
+                padding: 2.5rem 0 2rem;
+            }
+            .hero-tagline {
+                font-size: 1rem;
+            }
+            .btn-primary, .btn-secondary {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            .cta-group {
+                gap: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.9rem;
+            }
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo-area {
+                margin-bottom: 0.2rem;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="logo-area">
+            <!-- App icon image placeholder: replace "src" with your actual app icon path -->
+            <div class="app-icon-placeholder">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230f8b3e'/%3E%3Ctext x='50' y='70' font-size='48' text-anchor='middle' fill='white' font-weight='bold' font-family='Arial'%3EY%3C/text%3E%3C/svg%3E"
+                     alt="YaarWin App Icon">
+            </div>
+            <span class="logo-text">YaarWin</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#about">About</a>
+            <a href="#install">Install</a>
+            <a href="#faq">FAQ</a>
+            <a href="#download-cta" class="btn-outline-nav"><i class="fas fa-download"></i> APK</a>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero Section - removed image placeholder, full width text for better mobile spacing -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-fire"></i> New on the block</div>
+                <h1>YaarWin<br>Play & Win Together</h1>
+                <p class="hero-tagline">Your ultimate social gaming companion — connect, compete, and celebrate with friends. Download the APK and start winning.</p>
+                <div class="cta-group">
+                    <a href="#" class="btn-primary" id="heroDownloadBtn"><i class="fas fa-download"></i> Download APK</a>
+                    <a href="#how-to-install" class="btn-secondary"><i class="fas fa-play-circle"></i> How to install</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="section-title"><span>Amazing Features</span></div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance, low data usage, and smooth gameplay — even on older devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure & Private</h3>
+                    <p>End-to-end encrypted chats, secure login, and total control of your data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Daily Rewards</h3>
+                    <p>Exciting leaderboards, win prizes, and unlock exclusive badges with friends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots">
+        <div class="container">
+            <div class="section-title"><span>App Sneak Peek</span></div>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="https://placehold.co/300x550/d9f0e3/0f8b3e?text=Home+Screen&font=Montserrat" alt="Screenshot 1 placeholder">
+                    <p>Home Dashboard</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="https://placehold.co/300x550/e0f2e9/0f8b3e?text=Game+Zone&font=Montserrat" alt="Screenshot 2 placeholder">
+                    <p>Multiplayer Games</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="https://placehold.co/300x550/c8e6d9/0f8b3e?text=Chat+&+Rewards&font=Montserrat" alt="Screenshot 3 placeholder">
+                    <p>Chat & Rewards Hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the App Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-wrap">
+                <div class="about-text">
+                    <h3>About YaarWin</h3>
+                    <p>YaarWin is more than just a gaming app — it's a social hub where friends meet, compete, and win amazing rewards. Built with a focus on community and real-time interaction, YaarWin brings together casual gamers and competitive spirits alike.</p>
+                    <p>Whether you're looking to kill time with quick mini-games or dive into team challenges, YaarWin has something for everyone. Our regular updates and seasonal events keep the excitement alive. <strong>Join 100K+ active users</strong> and feel the YaarWin vibe!</p>
+                    <i class="fas fa-users" style="color: var(--green-primary); margin-top: 0.5rem; display: inline-block;"></i> <span style="font-weight: 500;">  Growing community every day</span>
+                </div>
+                <div class="about-icon">
+                    <i class="fas fa-mobile-alt" style="font-size: 5rem; color: var(--green-primary); opacity: 0.7;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Install Section (Steps) -->
+    <section id="install">
+        <div class="container">
+            <div class="section-title"><span>How to Install</span></div>
+            <div class="steps">
+                <div class="step"><div class="step-number">1</div><h4>Download APK</h4><p>Click the Download APK button and get the .apk file.</p></div>
+                <div class="step"><div class="step-number">2</div><h4>Enable Unknown Sources</h4><p>Go to Settings → Security → Enable "Unknown Sources".</p></div>
+                <div class="step"><div class="step-number">3</div><h4>Install App</h4><p>Open the APK file and tap "Install". Wait for completion.</p></div>
+                <div class="step"><div class="step-number">4</div><h4>Open and Play</h4><p>Launch YaarWin, create your profile, and start winning!</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title"><span>Frequently Asked Questions</span></div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Is YaarWin completely free? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Yes! YaarWin is free to download and play. There are optional in-app purchases for exclusive rewards, but core gameplay is 100% free.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is my data safe with YaarWin? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">Absolutely. We use industry-standard encryption and never share your personal data with third parties. Read our privacy policy for more details.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How to update the app? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">You will receive an in-app notification when a new version is available. You can download the latest APK from our official website.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Does YaarWin work on all Android versions? <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">YaarWin supports Android 6.0 and above. For best performance, we recommend Android 10+.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download / CTA Section -->
+    <section id="download-cta">
+        <div class="container">
+            <div class="cta-section">
+                <h2>Ready to level up?</h2>
+                <p>Join thousands of players experiencing the thrill of YaarWin. Get the APK now and start your adventure.</p>
+                <a href="#" class="btn-primary" id="ctaDownloadBtn" style="background: var(--green-dark);"><i class="fas fa-download"></i> Download APK Now</a>
+                <p style="margin-top: 1.2rem; font-size: 0.85rem;">📱 Compatible with Android devices | Version 2.5.0</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div class="copyright">
+            &copy; 2025 YaarWin. All rights reserved. Built with <i class="fas fa-heart" style="color: var(--green-primary);"></i> for gamers.
+        </div>
+        <div class="footer-nav">
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#screenshots">Screenshots</a>
+            <a href="#faq">FAQ</a>
+            <!-- Privacy policy placeholder: replace href with your actual privacy policy URL -->
+            <a href="#" id="privacyPolicyLink">Privacy Policy</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ toggle functionality
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const questionDiv = item.querySelector('.faq-question');
+        questionDiv.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            faqItems.forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
+    if(faqItems.length) faqItems[0].classList.add('active');
+
+    // Download APK placeholder (replace dummyDownloadUrl with actual APK link)
+    const dummyDownloadUrl = "https://example.com/download/yaarwin-latest.apk";
+    const allDownloadBtns = document.querySelectorAll('#heroDownloadBtn, #ctaDownloadBtn, .btn-outline-nav');
+    allDownloadBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Replace with actual APK download link when ready
+            window.open(dummyDownloadUrl, '_blank');
+        });
+    });
+
+    // Privacy policy placeholder link
+    const privacyLink = document.getElementById('privacyPolicyLink');
+    if(privacyLink) {
+        privacyLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert('Privacy policy link placeholder: Replace href with your real privacy policy URL.');
+        });
+    }
+
+    // Update copyright year dynamically
+    const copyrightSpan = document.querySelector('.copyright');
+    if(copyrightSpan) {
+        copyrightSpan.innerHTML = `&copy; ${new Date().getFullYear()} YaarWin. All rights reserved. Built with <i class="fas fa-heart" style="color: var(--green-primary);"></i> for gamers.`;
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if(targetId === "#" || targetId === "") return;
+            const targetElement = document.querySelector(targetId);
+            if(targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+</script>
+</body>
+</html>
